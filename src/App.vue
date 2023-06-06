@@ -1,38 +1,25 @@
 <template>
-  <div :class="isDarkMode ? 'dark' : ''">
-    <div
-      class="bg-blue-100 min-h-screen sm:p-10 p-5 flex flex-col justify-center dark:bg-[#0F172A] duration-500 transition-all ease-in-out">
-      <p style="color: white; font-size: 100px">Pangea</p>
+  <nav class="bg-red-950 text-white px-4 py-2">
+    <div class="flex justify-between items-center">
+      <ul class="flex space-x-4">
+        <li><a href="#" class="hover:text-green-300">Home</a></li>
+        <li><a href="#" class="hover:text-green-300">About</a></li>
+        <li><a href="#" class="hover:text-green-300">Services</a></li>
+        <li><a href="#" class="hover:text-green-300">Contact</a></li>
+      </ul>
     </div>
+  </nav>
+
+  <div style="background: linear-gradient(to bottom right, darkred, black); min-height: 120vh;">
+    <RouterView />
   </div>
+
+  
 </template>
 
 <script setup>
-import ModeToggler from './components/ModeToggler.vue';
 
-
-import { ref, onMounted } from 'vue';
-
-const isDarkMode = ref(false);
-
-onMounted(() => {
-  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    isDarkMode.value = true;
-  } else {
-    isDarkMode.value = false;
-  }
-})
-
-const toggleDarkMode = () => {
-  if (isDarkMode.value) {
-    localStorage.theme = 'light';
-    isDarkMode.value = false;
-  } else {
-    localStorage.theme = 'dark';
-    isDarkMode.value = true;
-  }
-}
-
+console.log('Setting up!')
 
 </script>
 
