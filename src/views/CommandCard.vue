@@ -21,20 +21,23 @@
 
 <style>
 .command {
-    border-radius: 25px;
+    
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
     text-align: center;
     border-style: solid;
     opacity: 80%;
-    border-width: 5px;
-    margin: 20px;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 85%;
+    flex-shrink: 4;
 }
 
-.command:hover {
-    border-color: rgb(207, 255, 207);
+.command:hover .name {
+    color: rgb(207, 255, 207);
 }
 
 .command:hover .arrow {
@@ -51,6 +54,7 @@
 
 .name {
     flex-shrink: 0;
+    padding: 5px;
 }
 
 .body {

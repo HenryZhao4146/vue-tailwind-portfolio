@@ -88,8 +88,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 7%;
-    margin-right: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
     padding-bottom: 150px;
 }
 
