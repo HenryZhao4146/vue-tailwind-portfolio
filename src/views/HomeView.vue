@@ -1,5 +1,4 @@
 <template>
-    <!-- Header -->
     <header class="py-20 text-center">
         <div class="header">
             <img src="../assets/imgs/ServerIcon.png">
@@ -8,7 +7,6 @@
 
     </header>
 
-    <!-- Body -->
     <div class="body-container text-white">
         <div class="body-intro">
             <p>Think twice before proceeding into the land of dinosaurs. But if you insist on taming
@@ -17,13 +15,13 @@
             <img src="../assets/imgs/logo.png">
         </div>
         <div class="body-divider">Command category</div>
-        <CommandCard></CommandCard>
-        <CommandCard></CommandCard>
-        <CommandCard></CommandCard>
+        <CommandCard name="!command here"></CommandCard>
+        <CommandCard name="!command"></CommandCard>
+        <CommandCard name="!qwegqerwgqrweg"></CommandCard>
         <div class="body-divider">Command category</div>
-        <CommandCard></CommandCard>
-        <CommandCard></CommandCard>
-        <CommandCard></CommandCard>
+        <CommandCard name="!asdfqwgwq"></CommandCard>
+        <CommandCard name="!hello hello"></CommandCard>
+        <CommandCard name="!bye bye"></CommandCard>
     </div>
 </template>
 
@@ -89,37 +87,6 @@
     padding-bottom: 150px;
 }
 
-.body-text {
-    border-radius: 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 50px;
-    padding-left: 50px;
-    background-color: rgba(255, 255, 255, 0.1);
-    text-align: center;
-    border-style: solid;
-    opacity: 80%;
-    border-width: 5px;
-    margin: 10px;
-}
-
-.body-text-head {
-    font-size: 30px;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-}
-
-.body-text-head .symbol {
-    margin-right: 30px;
-    margin-left: 30px;
-}
-
-.body-text-head .text {
-    flex-grow: 1;
-}
-
 @media (min-width: 701px) {
     .header {
         display: flex;
@@ -140,9 +107,9 @@
     }
 
     .body-intro img {
-    width: 200px;
-    height: 200px;
-}
+        width: 200px;
+        height: 200px;
+    }
 
     .header {
         display: flex;
@@ -156,25 +123,8 @@
     }
 
     .body-intro p {
-    width: 80%;
-}
-}
-
-.collapsible {
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 18px;
-}
-
-.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
+        width: 80%;
+    }
 }
 </style>
 

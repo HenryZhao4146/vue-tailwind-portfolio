@@ -3,7 +3,7 @@
         <div class="head">
             <span class="arrow" v-if="collapsed">⇓</span>
             <span class="arrow" v-else>⇑</span>
-            <span class="name">!command here</span>
+            <span class="name">{{name}}</span>
             <span class="arrow" v-if="collapsed">⇓</span>
             <span class="arrow" v-else>⇑</span>
         </div>
@@ -21,13 +21,11 @@
 
 <style>
 .command {
-
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     text-align: center;
-    border-style: solid;
     opacity: 80%;
 
     margin-top: 20px;
@@ -35,11 +33,7 @@
     width: 85%;
 }
 
-.command:hover .name {
-    color: rgb(207, 255, 207);
-}
-
-.command:hover .arrow {
+.command:hover .name, .command:hover .arrow {
     color: rgb(207, 255, 207);
 }
 
@@ -56,6 +50,7 @@
     display: inline-block;
     max-width: 100%;
     word-break: break-word;
+    flex-basis: 300px;
 }
 
 .body {
@@ -65,17 +60,27 @@
 
 .arrow {
     flex: 1;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 </style>
 
-<script setup>
+<script>
 import { ref } from 'vue';
 
-var collapsed = ref(true);
+export default {
+  props: ['name'],
 
-function toggleCollapse() {
-    collapsed.value = !collapsed.value;
+  setup(props) {
+    var collapsed = ref(true);
+    var name = ref(props.name);
+
+    function toggleCollapse() {
+      collapsed.value = !collapsed.value;
+    }
+
+    return {
+      collapsed,
+      toggleCollapse
+    };
+  }
 }
 </script>
