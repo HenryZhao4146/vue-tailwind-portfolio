@@ -9,65 +9,21 @@
     </header>
 
     <!-- Body -->
-    <div class="text-white">
-        <div class="body-container">
-            <div class="body-intro">
-                <p>Think twice before proceeding into the land of dinosaurs. But if you insist on taming
-                    the untameable, then let this be your guide.
-                </p>
-                <img src="../assets/imgs/logo.png">
-            </div>
-            <div class="body-divider">Sample divider</div>
-            <div class="body-text">
-                <div class="body-text-head">
-                    <span class="symbol">⇑</span>
-                    <button class="text" @click="toggleCollapse">{{ 'QWEGQRGqrgknqrewg' }}</button>
-                    <span class="symbol">⇑</span>
-                </div>
-                <div v-if="!collapsed" class="body-text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla
-                    sapien a fermentum fermentum.
-                    Curabitur nec finibus lectus. In pretium, ipsum nec consequat tempus, tellus metus faucibus justo, in
-                    rutrum
-                    dolor lacus non orci. In consequat euismod lorem non cursus. Aenean posuere dui sed tortor pellentesque
-                    tristique. Duis eu lacus vitae est tristique euismod. Nulla vitae justo urna. Fusce sed faucibus nulla.
-                    Mauris tempus nisl eu odio hendrerit tristique. Phasellus blandit augue at ultricies venenatis. Aliquam
-                    erat volutpat. Ut eu nisi consectetur, consequat nulla at, luctus leo.</div>
-            </div>
-            <div class="body-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla sapien a fermentum fermentum.
-                Curabitur nec finibus lectus. In pretium, ipsum nec consequat tempus, tellus metus faucibus justo, in rutrum
-                dolor lacus non orci. In consequat euismod lorem non cursus. Aenean posuere dui sed tortor pellentesque
-                tristique. Duis eu lacus vitae est tristique euismod. Nulla vitae justo urna. Fusce sed faucibus nulla.
-                Mauris tempus nisl eu odio hendrerit tristique. Phasellus blandit augue at ultricies venenatis. Aliquam
-                erat volutpat. Ut eu nisi consectetur, consequat nulla at, luctus leo.
-            </div>
-            <div class="body-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla sapien a fermentum fermentum.
-                Curabitur nec finibus lectus. In pretium, ipsum nec consequat tempus, tellus metus faucibus justo, in rutrum
-                dolor lacus non orci. In consequat euismod lorem non cursus. Aenean posuere dui sed tortor pellentesque
-                tristique. Duis eu lacus vitae est tristique euismod. Nulla vitae justo urna. Fusce sed faucibus nulla.
-                Mauris tempus nisl eu odio hendrerit tristique. Phasellus blandit augue at ultricies venenatis. Aliquam
-                erat volutpat. Ut eu nisi consectetur, consequat nulla at, luctus leo.
-            </div>
-
-            <button class="collapsible" @click="toggleCollapse">{{ collapsed ? 'Header' : 'Click to Collapse' }}</button>
-            <p v-show="!collapsed">Penguin</p>
-            <div class="content" v-show="!collapsed">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu consectetur est, vel tristique nisl.
-                    Aenean
-                    feugiat nec nulla at feugiat. Quisque tincidunt eleifend dolor, a varius tellus faucibus et. Suspendisse
-                    nec
-                    lorem vel mauris scelerisque fermentum. Nam et augue diam. Mauris finibus turpis sed libero blandit, in
-                    convallis risus placerat. Sed vestibulum turpis sit amet tortor dignissim condimentum. Ut sed ultricies
-                    nibh.
-                    Nullam finibus enim ac pulvinar eleifend. Sed luctus fringilla ex vel posuere. Curabitur posuere
-                    bibendum sem
-                    quis feugiat.
-                </p>
-            </div>
+    <div class="body-container text-white">
+        <div class="body-intro">
+            <p>Think twice before proceeding into the land of dinosaurs. But if you insist on taming
+                the untameable, then let this be your guide.
+            </p>
+            <img src="../assets/imgs/logo.png">
         </div>
-
+        <div class="body-divider">Command category</div>
+        <CommandCard></CommandCard>
+        <CommandCard></CommandCard>
+        <CommandCard></CommandCard>
+        <div class="body-divider">Command category</div>
+        <CommandCard></CommandCard>
+        <CommandCard></CommandCard>
+        <CommandCard></CommandCard>
     </div>
 </template>
 
@@ -123,6 +79,7 @@
 .body-divider {
     font-size: 40px;
     opacity: 80%;
+    margin-top: 60px;
 }
 
 .body-container {
@@ -132,6 +89,7 @@
     justify-content: center;
     margin-left: 7%;
     margin-right: 7%;
+    padding-bottom: 150px;
 }
 
 .body-text {
@@ -190,6 +148,10 @@
         align-items: center;
         justify-content: center;
     }
+
+    .body-intro {
+        flex-direction: column;
+    }
 }
 
 .collapsible {
@@ -211,11 +173,6 @@
 </style>
 
 <script setup>
-import { ref } from 'vue';
+import CommandCard from './CommandCard.vue';
 
-var collapsed = ref(true);
-
-function toggleCollapse() {
-    collapsed.value = !collapsed.value;
-}
 </script>
