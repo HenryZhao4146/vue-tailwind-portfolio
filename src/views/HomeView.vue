@@ -44,8 +44,6 @@
     }
 }
 
-
-
 .text-8xl {
     margin-left: 15px;
     max-width: 500px;
@@ -137,9 +135,14 @@
     }
 
     .header img {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
     }
+
+    .body-intro img {
+    width: 200px;
+    height: 200px;
+}
 
     .header {
         display: flex;
