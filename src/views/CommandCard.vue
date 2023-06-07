@@ -30,7 +30,7 @@
     opacity: 80%;
     border-width: 5px;
     margin: 20px;
-    min-width: 100vh;
+    width: 85%;
 }
 
 .command:hover {
