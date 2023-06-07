@@ -16,12 +16,12 @@
             tristique. Duis eu lacus vitae est tristique euismod. Nulla vitae justo urna. Fusce sed faucibus nulla.
             Mauris tempus nisl eu odio hendrerit tristique. Phasellus blandit augue at ultricies venenatis. Aliquam
             erat volutpat. Ut eu nisi consectetur, consequat nulla at, luctus leo.</div>
-        </button>
+    </button>
 </template>
 
 <style>
 .command {
-    
+
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -29,11 +29,10 @@
     text-align: center;
     border-style: solid;
     opacity: 80%;
-    
+
     margin-top: 20px;
     margin-bottom: 20px;
     width: 85%;
-    flex-shrink: 4;
 }
 
 .command:hover .name {
@@ -53,8 +52,10 @@
 }
 
 .name {
-    flex-shrink: 0;
-    padding: 5px;
+    flex-shrink: 1;
+    display: inline-block;
+    max-width: 100%;
+    word-break: break-word;
 }
 
 .body {
