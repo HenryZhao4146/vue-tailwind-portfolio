@@ -3,7 +3,7 @@
         <div class="head">
             <span class="arrow" v-if="collapsed">⇓</span>
             <span class="arrow" v-else>⇑</span>
-            <span>!command here</span>
+            <span class="name">!command here</span>
             <span class="arrow" v-if="collapsed">⇓</span>
             <span class="arrow" v-else>⇑</span>
         </div>
@@ -24,8 +24,6 @@
     border-radius: 25px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-right: 50px;
-    padding-left: 50px;
     background-color: rgba(255, 255, 255, 0.1);
     text-align: center;
     border-style: solid;
@@ -51,7 +49,7 @@
 }
 
 .name {
-    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .body {
@@ -60,8 +58,9 @@
 }
 
 .arrow {
-    margin-left: 40px;
-    margin-right: 40px;
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 </style>
 

@@ -80,6 +80,7 @@
     font-size: 40px;
     opacity: 80%;
     margin-top: 60px;
+    text-align: center;
 }
 
 .body-container {
@@ -138,8 +139,8 @@
     }
 
     .header img {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 
     .header {
@@ -152,6 +153,10 @@
     .body-intro {
         flex-direction: column;
     }
+
+    .body-intro p {
+    width: 80%;
+}
 }
 
 .collapsible {

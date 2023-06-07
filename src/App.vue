@@ -10,7 +10,7 @@
     </div>
   </nav>
 
-  <div style="background: linear-gradient(to bottom right, darkred, black); min-height: 120vh;">
+  <div style="min-width: 300px; background: linear-gradient(to bottom right, darkred, black); min-height: 120vh;">
     <RouterView />
   </div>
 
