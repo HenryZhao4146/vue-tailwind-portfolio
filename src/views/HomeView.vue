@@ -88,8 +88,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 7%;
-    padding-right: 7%;
     padding-bottom: 150px;
 }
 
