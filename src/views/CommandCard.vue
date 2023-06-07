@@ -30,6 +30,7 @@
     opacity: 80%;
     border-width: 5px;
     margin: 20px;
+    min-width: 100vh;
 }
 
 .command:hover {
@@ -58,7 +59,7 @@
 }
 
 .arrow {
-    flex-grow: 1;
+    flex: 1;
     margin-left: 10px;
     margin-right: 10px;
 }
