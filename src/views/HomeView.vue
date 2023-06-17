@@ -1,11 +1,8 @@
 <template>
-    <header class="py-20 text-center">
-        <div class="header">
-            <img src="../assets/imgs/ServerIcon.png">
-            <h1 class="text-8xl font-bold text-white">Welcome to Pangea</h1>
-        </div>
-
-    </header>
+    <div class="header">
+        <img src="../assets/imgs/ServerIcon.png">
+        <h1 class="text-8xl font-bold text-white">Welcome to Pangea</h1>
+    </div>
 
     <div class="body-container text-white">
         <div class="body-intro">
@@ -15,11 +12,11 @@
             <img src="../assets/imgs/logo.png">
         </div>
         <div class="body-divider">Command category</div>
-        <CommandCard name="!command here"></CommandCard>
-        <CommandCard name="!command"></CommandCard>
-        <CommandCard name="!qwegqerwgqrweg"></CommandCard>
+        <CommandCard name="!command 1"></CommandCard>
+        <CommandCard name="!command 2"></CommandCard>
+        <CommandCard name="!command 3"></CommandCard>
         <div class="body-divider">Command category</div>
-        <CommandCard name="!asdfqwgwq"></CommandCard>
+        <CommandCard name="!command 129481741732"></CommandCard>
         <CommandCard name="!hello hello"></CommandCard>
         <CommandCard name="!bye bye"></CommandCard>
     </div>
@@ -48,12 +45,19 @@
 }
 
 .body-intro {
-    margin-bottom: 60px;
-    margin-top: 60px;
+    width: 90%;
+    padding: 60px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    border-radius: 15px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: linear-gradient(45deg, green, black);
+    background: linear-gradient(90deg, rgba(0, 213, 255, 0.1), rgba(255, 255, 255, 0));
+
 }
 
 .body-intro p {
@@ -87,15 +91,16 @@
     padding-bottom: 150px;
 }
 
-@media (min-width: 701px) {
-    .header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.header {
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     .text-8xl {
         font-size: 60px;
         margin-top: 25px;
@@ -112,14 +117,15 @@
     }
 
     .header {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        padding-top: 75px;
+        padding-bottom: 75px;
     }
 
     .body-intro {
         flex-direction: column;
+        padding: 0px;
+        background: linear-gradient(180deg, rgba(0, 213, 255, 0.1), rgba(255, 255, 255, 0));
     }
 
     .body-intro p {

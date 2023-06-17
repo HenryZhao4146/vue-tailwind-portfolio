@@ -7,7 +7,7 @@
             <span class="arrow" v-if="collapsed">⇓</span>
             <span class="arrow" v-else>⇑</span>
         </div>
-        <div v-if="!collapsed" class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+        <div :style="(collapsed) ? 'max-height: 0px; padding-top: 0px; padding-bottom: 0px' : ''" class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             fringilla
             sapien a fermentum fermentum.
             Curabitur nec finibus lectus. In pretium, ipsum nec consequat tempus, tellus metus faucibus justo, in
@@ -31,10 +31,16 @@
     margin-top: 20px;
     margin-bottom: 20px;
     width: 85%;
+
+    transition: all 0.2s;
 }
 
 .command:hover .name, .command:hover .arrow {
-    color: rgb(207, 255, 207);
+    opacity: 0.85;
+}
+
+.command:hover {
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .head {
@@ -47,19 +53,26 @@
 
 .name {
     flex-shrink: 1;
+    flex-grow: 1;
     display: inline-block;
     max-width: 100%;
     word-break: break-word;
-    flex-basis: 300px;
 }
 
 .body {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     font-size: 18px;
+    overflow: hidden;
+    max-height: 600px;
+
+    transition: all 0.5s;
 }
 
 .arrow {
-    flex: 1;
+    flex-basis: 20%;
 }
 </style>
 
