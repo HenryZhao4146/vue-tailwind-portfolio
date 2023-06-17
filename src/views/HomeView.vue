@@ -19,6 +19,7 @@
         <CommandCard name="!command 129481741732"></CommandCard>
         <CommandCard name="!hello hello"></CommandCard>
         <CommandCard name="!bye bye"></CommandCard>
+        <CommandCard name="!aaaaaaaaa bbbbb ccccc"></CommandCard>
     </div>
 </template>
 
@@ -56,7 +57,7 @@
     border-width: 0px;
     border-style: solid;
     border-color: linear-gradient(45deg, green, black);
-    background: linear-gradient(90deg, rgba(0, 213, 255, 0.1), rgba(255, 255, 255, 0));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
 
 }
 
@@ -125,7 +126,7 @@
     .body-intro {
         flex-direction: column;
         padding: 0px;
-        background: linear-gradient(180deg, rgba(0, 213, 255, 0.1), rgba(255, 255, 255, 0));
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     }
 
     .body-intro p {
