@@ -82,6 +82,7 @@
     opacity: 80%;
     margin-top: 60px;
     text-align: center;
+    word-break: break-word;
 }
 
 .body-container {
@@ -90,6 +91,7 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 150px;
+    word-break: break-word;
 }
 
 .header {
