@@ -1,5 +1,4 @@
 <template>
-  <!--
   <nav class="text-white">
     <div class="bar">
       <a href="#" class="navlink">Home</a>
@@ -8,7 +7,6 @@
       <a href="#" class="rightmost navlink">Join Us</a>
     </div>
   </nav>
-  -->
 
   <div>
     <RouterView />
