@@ -43,6 +43,7 @@
 .text-8xl {
     margin-left: 15px;
     max-width: 500px;
+    word-break: break-word;
 }
 
 .body-intro {
@@ -58,7 +59,6 @@
     border-style: solid;
     border-color: linear-gradient(45deg, green, black);
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-
 }
 
 .body-intro p {
@@ -67,7 +67,7 @@
     width: 400px;
     line-height: 3;
     text-align: right;
-    color: white;
+    color: rgb(235, 255, 241);
     opacity: 80%;
 }
 

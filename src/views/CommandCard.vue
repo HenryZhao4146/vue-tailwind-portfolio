@@ -7,7 +7,8 @@
             <span class="arrow" v-if="collapsed">⇓</span>
             <span class="arrow" v-else>⇑</span>
         </div>
-        <div :style="(collapsed) ? 'max-height: 0px; padding-top: 0px; padding-bottom: 0px' : ''" class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+        <div :style="(collapsed) ? 'max-height: 0px; padding-top: 0px; padding-bottom: 0px' : ''" class="body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             fringilla
             sapien a fermentum fermentum.
             Curabitur nec finibus lectus. In pretium, ipsum nec consequat tempus, tellus metus faucibus justo, in
@@ -15,7 +16,7 @@
             dolor lacus non orci. In consequat euismod lorem non cursus. Aenean posuere dui sed tortor pellentesque
             tristique. Duis eu lacus vitae est tristique euismod. Nulla vitae justo urna. Fusce sed faucibus nulla.
             Mauris tempus nisl eu odio hendrerit tristique. Phasellus blandit augue at ultricies venenatis. Aliquam
-            erat volutpat. Ut eu nisi consectetur, consequat nulla at, luctus leo.</div>
+            erat volutpat. Ut eu nisi consectetur, consequat nulla at, luctus leo.</p></div>
     </button>
 </template>
 
@@ -66,9 +67,9 @@
     padding-right: 40px;
     font-size: 18px;
     overflow: hidden;
-    max-height: 600px;
+    max-height: 1000px;
 
-    transition: all 0.5s;
+    transition: padding 0.2s, max-height 0.5s;
 }
 
 .arrow {

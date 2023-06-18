@@ -1,35 +1,52 @@
 <template>
-  <nav class="bg-red-950 text-white">
-    <div class="bar flex justify-between items-center">
-      <ul class="flex">
-        <li><a href="#" class="navlink">Home</a></li>
-        <li><a href="#" class="navlink">About</a></li>
-        <li><a href="#" class="navlink">Invite</a></li>
-        <li><a href="#" class="navlink">Join Us</a></li>
-      </ul>
+  <nav class="text-white">
+    <div class="bar">
+      <a href="#" class="navlink">Home</a>
+      <a href="#" class="navlink">About</a>
+      <a href="#" class="navlink">Invite</a>
+      <a href="#" class="rightmost navlink">Join Us</a>
     </div>
   </nav>
 
-  <div style="min-width: 300px; background: linear-gradient(to bottom right, darkred, black); min-height: 120vh;">
+  <div>
     <RouterView />
   </div>
-
-  
 </template>
 
 <style>
 .bar {
-  height: 50px;
+  display: flex;
 }
 
 .navlink {
+  color:rgb(230, 252, 255);
   font-size: 20px;
-  margin-right: 10px;
-  padding: 10px;
+  text-align: center;
+  display: block;
+  flex-grow: 1;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+  margin-right: 0px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transition: all 0.2s;
+  word-break: break-word;
 }
 
 .navlink:hover {
-  color: rgb(193, 255, 193);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.rightmost {
+  margin-right: 8px;
+}
+
+.bar>div {
+  flex-grow: 1;
 }
 </style>
 
