@@ -3,8 +3,8 @@
     <div class="bar">
       <a href="#" class="navlink">Home</a>
       <a href="#" class="navlink">About</a>
-      <a href="#" class="navlink">Invite</a>
-      <a href="#" class="rightmost navlink">Join Us</a>
+      <a href="https://discord.com/oauth2/authorize?client_id=1079973948218937414&permissions=388160&scope=bot" target="_blank" class="navlink">Invite</a>
+      <a href="https://discord.gg/KdeCr7HGcq" target="_blank" class="rightmost navlink">Join Us</a>
     </div>
   </nav>
 

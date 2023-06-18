@@ -31,7 +31,7 @@
 
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 85%;
+    width: 90%;
 
     transition: all 0.2s;
 }
