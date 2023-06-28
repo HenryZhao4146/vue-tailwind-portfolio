@@ -8,31 +8,32 @@
             <span class="arrow" v-else>⇑</span>
         </div>
         <div :style="(collapsed) ? 'max-height: 0px; padding-top: 0px; padding-bottom: 0px' : ''" class="body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                fringilla
-                sapien a fermentum fermentum.
-                Curabitur nec finibus lectus. In pretium, ipsum nec consequat tempus, tellus metus faucibus justo, in
-                rutrum
-                dolor lacus non orci. In consequat euismod lorem non cursus. Aenean posuere dui sed tortor pellentesque
-                tristique. Duis eu lacus vitae est tristique euismod. Nulla vitae justo urna. Fusce sed faucibus nulla.
-                Mauris tempus nisl eu odio hendrerit tristique. Phasellus blandit augue at ultricies venenatis. Aliquam
-                erat volutpat. Ut eu nisi consectetur, consequat nulla at, luctus leo.</p>
+            <p class="campbellssoup">{{ syntax }}</p>
+            <p :style="(align_left) ? 'text-align: left' : ''"><slot></slot></p>
         </div>
     </button>
 </template>
 
 <style>
+.campbellssoup {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
 .command {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    text-align: center;
     opacity: 80%;
     margin-top: 20px;
     margin-bottom: 20px;
 
     transition: all 0.2s;
+    width: 100%;
 }
 
 .command:hover .name,
@@ -91,11 +92,10 @@
 import { ref } from 'vue';
 
 export default {
-    props: ['name'],
+    props: ['name', 'syntax', 'align_left'],
 
     setup(props) {
         var collapsed = ref(true);
-        var name = ref(props.name);
 
         function toggleCollapse() {
             collapsed.value = !collapsed.value;

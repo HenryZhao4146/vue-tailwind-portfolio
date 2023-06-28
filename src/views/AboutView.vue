@@ -14,7 +14,7 @@
 
         <div class="subsequent body-intro box2">
             <p>Once upon a time, all the continents were stuck together like overcooked mac and cheese, forming the Pangea
-                supercontinent. Here roamed dinosaurs of all shapes and sizes. But far from living in harmony, many
+                supercontinent. Here roamed dinosaurs of all shapes and sizes. Far from living in harmony, though, many
                 dinosaurs engaged in predatory behavior and would've folded you into a pretzel regardless of how tough you
                 act behind your keyboard. But rather than fearing these magnificent beasts, you should harness their power.
                 DinoBot's vibrant virtual economy lets you buy dinosaurs, which are then yours to customize, train, breed,
@@ -36,7 +36,7 @@
 }
 
 .bob {
-    animation: bob 10s infinite linear;
+    animation: bob 3s infinite linear;
 }
 
 @keyframes eggrotation {
@@ -56,29 +56,29 @@
 
 @keyframes bob {
     0% {
-        transform: translateY(150px) rotate(-240deg);
+        transform: translateY(10px) scale(1.1, 0.9);;
     }
 
     50% {
-        transform: translateY(-150px) rotate(240deg);
+        transform: translateY(-10px) scale(0.9, 1.1);;
     }
 
     100% {
-        transform: translateY(150px) rotate(-240deg);
+        transform: translateY(10px) scale(1.1, 0.9);;
     }
 }
 
 @keyframes bob2 {
     0% {
-        transform: translateX(50px) rotate(-240deg);
+        transform: translateY(9px) scale(1.1, 0.9);;
     }
 
     50% {
-        transform: translateX(-50px) rotate(240deg);
+        transform: translateY(-6px) scale(0.9, 1.1);;
     }
 
     100% {
-        transform: translateX(50px) rotate(-240deg);
+        transform: translateY(9px) scale(1.1, 0.9);;
     }
 }
 
@@ -114,7 +114,7 @@
     }
 
     .bob {
-    animation: bob2 10s infinite linear;
+    animation: bob2 3s infinite linear;
 }
 }
 </style>
