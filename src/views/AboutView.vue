@@ -1,0 +1,120 @@
+<template>
+    <div class="header">
+        <img class="egg" src="../assets/imgs/egg.png">
+        <h1>About Pangea</h1>
+    </div>
+
+    <div class="body-container text-white">
+        <div class="body-intro box1">
+            <p>You might be wondering, why is there an egg on this page? Because eggs are cool. You know what else is
+                cool? A Discord bot that lets you own dinosaurs. Keep scrolling to read the epic tale of DinoBot.
+            </p>
+            <img class="bob" src="../assets/imgs/dino1.png">
+        </div>
+
+        <div class="subsequent body-intro box2">
+            <p>Once upon a time, all the continents were stuck together like overcooked mac and cheese, forming the Pangea
+                supercontinent. Here roamed dinosaurs of all shapes and sizes. But far from living in harmony, many
+                dinosaurs engaged in predatory behavior and would've folded you into a pretzel regardless of how tough you
+                act behind your keyboard. But rather than fearing these magnificent beasts, you should harness their power.
+                DinoBot's vibrant virtual economy lets you buy dinosaurs, which are then yours to customize, train, breed,
+                and most importantly, send to war against other players. The more your dinos fight, the better they'll
+                become at it. And the better they fight, the more resources you plunder to finance a bigger army.
+            </p>
+        </div>
+
+        <div class="chickenpenguin">
+            Note: this about page is not done, it's just a rough draft :)
+        </div>
+
+    </div>
+</template>
+
+<style>
+.egg {
+    animation: eggrotation 2s infinite linear;
+}
+
+.bob {
+    animation: bob 10s infinite linear;
+}
+
+@keyframes eggrotation {
+
+    0% {
+        transform: translateX(-20px) rotate(-10deg);
+    }
+
+    50% {
+        transform: translateX(20px) rotate(10deg);
+    }
+
+    100% {
+        transform: translateX(-20px) rotate(-10deg);
+    }
+}
+
+@keyframes bob {
+    0% {
+        transform: translateY(150px) rotate(-240deg);
+    }
+
+    50% {
+        transform: translateY(-150px) rotate(240deg);
+    }
+
+    100% {
+        transform: translateY(150px) rotate(-240deg);
+    }
+}
+
+@keyframes bob2 {
+    0% {
+        transform: translateX(50px) rotate(-240deg);
+    }
+
+    50% {
+        transform: translateX(-50px) rotate(240deg);
+    }
+
+    100% {
+        transform: translateX(50px) rotate(-240deg);
+    }
+}
+
+.box1 {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+}
+
+.box2 {
+    font-style: italic;
+    border-width: 12px;
+    border-style: groove;
+    border-color: rgba(172, 255, 233, 0.2);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    color: rgb(214, 202, 189);
+}
+
+.subsequent {
+    margin-top: 100px;
+}
+
+.subsequent p {
+    text-align: center;
+}
+
+.chickenpenguin {
+    text-align: center;
+    font-size: 40px;
+}
+
+@media (max-width: 750px) {
+    .subsequent {
+        margin-top: 30px;
+    }
+
+    .bob {
+    animation: bob2 10s infinite linear;
+}
+}
+</style>

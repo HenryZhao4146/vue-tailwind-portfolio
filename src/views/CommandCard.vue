@@ -3,20 +3,21 @@
         <div class="head">
             <span class="arrow" v-if="collapsed">⇓</span>
             <span class="arrow" v-else>⇑</span>
-            <span class="name">{{name}}</span>
+            <span class="name">{{ name }}</span>
             <span class="arrow" v-if="collapsed">⇓</span>
             <span class="arrow" v-else>⇑</span>
         </div>
         <div :style="(collapsed) ? 'max-height: 0px; padding-top: 0px; padding-bottom: 0px' : ''" class="body">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            fringilla
-            sapien a fermentum fermentum.
-            Curabitur nec finibus lectus. In pretium, ipsum nec consequat tempus, tellus metus faucibus justo, in
-            rutrum
-            dolor lacus non orci. In consequat euismod lorem non cursus. Aenean posuere dui sed tortor pellentesque
-            tristique. Duis eu lacus vitae est tristique euismod. Nulla vitae justo urna. Fusce sed faucibus nulla.
-            Mauris tempus nisl eu odio hendrerit tristique. Phasellus blandit augue at ultricies venenatis. Aliquam
-            erat volutpat. Ut eu nisi consectetur, consequat nulla at, luctus leo.</p></div>
+                fringilla
+                sapien a fermentum fermentum.
+                Curabitur nec finibus lectus. In pretium, ipsum nec consequat tempus, tellus metus faucibus justo, in
+                rutrum
+                dolor lacus non orci. In consequat euismod lorem non cursus. Aenean posuere dui sed tortor pellentesque
+                tristique. Duis eu lacus vitae est tristique euismod. Nulla vitae justo urna. Fusce sed faucibus nulla.
+                Mauris tempus nisl eu odio hendrerit tristique. Phasellus blandit augue at ultricies venenatis. Aliquam
+                erat volutpat. Ut eu nisi consectetur, consequat nulla at, luctus leo.</p>
+        </div>
     </button>
 </template>
 
@@ -28,15 +29,14 @@
     border-radius: 10px;
     text-align: center;
     opacity: 80%;
-
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 90%;
 
     transition: all 0.2s;
 }
 
-.command:hover .name, .command:hover .arrow {
+.command:hover .name,
+.command:hover .arrow {
     opacity: 0.85;
 }
 
@@ -75,26 +75,36 @@
 .arrow {
     flex-basis: 20%;
 }
+
+@media (max-width: 750px) {
+    .head {
+        font-size: 20px;
+    }
+
+    .body {
+        font-size: 14px;
+    }
+}
 </style>
 
 <script>
 import { ref } from 'vue';
 
 export default {
-  props: ['name'],
+    props: ['name'],
 
-  setup(props) {
-    var collapsed = ref(true);
-    var name = ref(props.name);
+    setup(props) {
+        var collapsed = ref(true);
+        var name = ref(props.name);
 
-    function toggleCollapse() {
-      collapsed.value = !collapsed.value;
+        function toggleCollapse() {
+            collapsed.value = !collapsed.value;
+        }
+
+        return {
+            collapsed,
+            toggleCollapse
+        };
     }
-
-    return {
-      collapsed,
-      toggleCollapse
-    };
-  }
 }
 </script>

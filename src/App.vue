@@ -1,8 +1,8 @@
 <template>
   <nav class="text-white">
     <div class="bar">
-      <a href="#" class="navlink">Home</a>
-      <a href="#" class="navlink">About</a>
+      <a href="/" class="navlink">Home</a>
+      <a href="/about" class="navlink">About</a>
       <a href="https://discord.com/oauth2/authorize?client_id=1079973948218937414&permissions=388160&scope=bot" target="_blank" class="navlink">Invite</a>
       <a href="https://discord.gg/KdeCr7HGcq" target="_blank" class="rightmost navlink">Join Us</a>
     </div>
@@ -47,6 +47,12 @@
 
 .bar>div {
   flex-grow: 1;
+}
+
+@media (max-width: 750px) {
+    .navlink {
+      font-size: 15px;
+    }
 }
 </style>
 
