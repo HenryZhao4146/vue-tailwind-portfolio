@@ -9,18 +9,34 @@
         </div>
         <div :style="(collapsed) ? 'max-height: 0px; padding-top: 0px; padding-bottom: 0px' : ''" class="body">
             <p class="campbellssoup">{{ syntax }}</p>
-            <p :style="(align_left) ? 'text-align: left' : ''"><slot></slot></p>
+            <p class="pumpkinpie" :style="(align_left) ? 'text-align: left' : ''">
+                <slot></slot>
+            </p>
         </div>
     </button>
 </template>
 
 <style>
 .campbellssoup {
-    background-color: rgba(0, 0, 0, 0.3);
     margin-bottom: 15px;
-    padding: 10px;
     display: inline-block;
+    padding: 5px;
+    border-width: 5px;
+    border-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.campbellssoup,
+soup {
+    color: rgb(255, 255, 255);
     border-radius: 4px;
+    color: rgb(231, 231, 231);
+    font-family: 'Lucida Console', monospace;
+}
+
+soup {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 4px;
 }
 
 .command {
@@ -83,7 +99,15 @@
     }
 
     .body {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
         font-size: 14px;
+    }
+
+    .pumpkinpie {
+        text-align: justify;
     }
 }
 </style>

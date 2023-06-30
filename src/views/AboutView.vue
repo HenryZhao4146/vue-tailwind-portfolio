@@ -56,29 +56,35 @@
 
 @keyframes bob {
     0% {
-        transform: translateY(10px) scale(1.1, 0.9);;
+        transform: translateY(10px) scale(1.1, 0.9);
+        ;
     }
 
     50% {
-        transform: translateY(-10px) scale(0.9, 1.1);;
+        transform: translateY(-10px) scale(0.9, 1.1);
+        ;
     }
 
     100% {
-        transform: translateY(10px) scale(1.1, 0.9);;
+        transform: translateY(10px) scale(1.1, 0.9);
+        ;
     }
 }
 
 @keyframes bob2 {
     0% {
-        transform: translateY(9px) scale(1.1, 0.9);;
+        transform: translateY(9px) scale(1.1, 0.9);
+        ;
     }
 
     50% {
-        transform: translateY(-6px) scale(0.9, 1.1);;
+        transform: translateY(-6px) scale(0.9, 1.1);
+        ;
     }
 
     100% {
-        transform: translateY(9px) scale(1.1, 0.9);;
+        transform: translateY(9px) scale(1.1, 0.9);
+        ;
     }
 }
 
@@ -87,7 +93,7 @@
 }
 
 .box2 {
-    font-style: italic;
+    font-family: 'Lucida Handwriting',cursive;
     border-width: 12px;
     border-style: groove;
     border-color: rgba(172, 255, 233, 0.2);
@@ -114,7 +120,6 @@
     }
 
     .bob {
-    animation: bob2 3s infinite linear;
-}
-}
-</style>
+        animation: bob2 3s infinite linear;
+    }
+}</style>

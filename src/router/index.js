@@ -4,14 +4,19 @@ import AboutView from '../views/AboutView.vue'
 
 const routes = [
     {
+        path: '/about',
+        name: 'About',
+        component: AboutView
+    },
+    {
         path: '/',
         name: 'Home',
         component: HomeView
     },
     {
-        path: '/about',
-        name: 'About',
-        component: AboutView
+        path: '/:route',
+        name: 'MatchAll',
+        component: HomeView
     }
 ]
 
