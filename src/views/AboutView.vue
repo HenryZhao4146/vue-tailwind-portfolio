@@ -23,6 +23,10 @@
             </p>
         </div>
 
+        <div class="grilledcheese">
+            <img class="bigbob" src="../assets/imgs/dino2.png">
+        </div>
+
         <div class="chickenpenguin">
             Note: this about page is not done, it's just a rough draft :)
         </div>
@@ -31,12 +35,21 @@
 </template>
 
 <style>
+.grilledcheese img {
+    margin-top: 30px;
+    width: 1000px;
+}
+
 .egg {
     animation: eggrotation 2s infinite linear;
 }
 
 .bob {
     animation: bob 3s infinite linear;
+}
+
+.bigbob {
+    animation: bigbob 3s infinite linear;
 }
 
 @keyframes eggrotation {
@@ -56,34 +69,68 @@
 
 @keyframes bob {
     0% {
-        transform: translateY(10px) scale(1.1, 0.9);
+        transform: translateY(5px) scale(1.05, 0.95);
         ;
     }
 
     50% {
-        transform: translateY(-10px) scale(0.9, 1.1);
+        transform: translateY(-5px) scale(0.95, 1.05);
         ;
     }
 
     100% {
-        transform: translateY(10px) scale(1.1, 0.9);
+        transform: translateY(5px) scale(1.05, 0.95);
+        ;
+    }
+}
+
+@keyframes bigbob {
+    0% {
+        transform: translateY(10px) scale(1.05, 0.95);
+        ;
+    }
+
+    50% {
+        transform: translateY(-10px) scale(0.95, 1.05);
+        ;
+    }
+
+    100% {
+        transform: translateY(10px) scale(1.05, 0.95);
+        ;
+    }
+}
+
+@keyframes bigbob2 {
+    0% {
+        transform: translateY(2px) scale(1.05, 0.95);
+        ;
+    }
+
+    50% {
+        transform: translateY(-2px) scale(0.95, 1.05);
+        ;
+    }
+
+    100% {
+        transform: translateY(2px) scale(1.05, 0.95);
         ;
     }
 }
 
 @keyframes bob2 {
     0% {
-        transform: translateY(9px) scale(1.1, 0.9);
+        transform: translateY(2.5px) scale(1.05, 0.95);
         ;
     }
 
     50% {
-        transform: translateY(-6px) scale(0.9, 1.1);
+        transform: translateY(-2.5px) scale(0.95, 1.05);
         ;
     }
 
     100% {
-        transform: translateY(9px) scale(1.1, 0.9);
+        transform: translateY(2.5px) scale(1.05, 0.95);
         ;
     }
 }
@@ -93,7 +140,7 @@
 }
 
 .box2 {
-    font-family: 'Lucida Handwriting',cursive;
+    font-family: 'Lucida Handwriting', cursive;
     border-width: 12px;
     border-style: groove;
     border-color: rgba(172, 255, 233, 0.2);
@@ -122,4 +169,13 @@
     .bob {
         animation: bob2 3s infinite linear;
     }
-}</style>
+
+    .bigbob {
+        animation: bigbob2 3s infinite linear;
+    }
+
+    .grilledcheese img {
+        width: 250px;
+    }
+}
+</style>
