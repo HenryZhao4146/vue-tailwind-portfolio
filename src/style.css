@@ -61,12 +61,17 @@
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
 }
 
-.body-intro p {
+.fatcat {
+    width: 100%;
+    padding: 40px;
+}
+
+.body-intro p, .fatcat p {
     font-size: 35px;
     min-width: 50%;
     line-height: 3;
     text-align: right;
-    opacity: 80%;
+    opacity: 90%;
 }
 
 .body-intro img {
@@ -111,9 +116,14 @@
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     }
 
-    .body-intro p {
+    .body-intro p, .fatcat p {
         text-align: center;
         font-size: 18px;
+    }
+
+    .fatcat {
+        padding: 5px;
+        margin-top: 40px;
     }
 
     .body-divider {

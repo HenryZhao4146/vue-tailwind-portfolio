@@ -27,17 +27,42 @@
             <img class="bigbob" src="../assets/imgs/dino2.png">
         </div>
 
-        <div class="chickenpenguin">
-            Note: this about page is not done, it's just a rough draft :)
+        <div class="fatcat">
+            <p>Now that you know what's up, head back to the top of the page to join our server and kickstart your prehistoric empire. Go!
+            </p>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <p>I said, go!</p>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <p>Back to the top of the page!</p>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <p>No, the TOP of the page. Not the bottom!</p>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <p>What, can you not read?</p>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <p>Go back. There's nothing to see down here.</p>
         </div>
-
     </div>
 </template>
 
 <style>
 .grilledcheese img {
-    margin-top: 30px;
-    width: 1000px;
+    margin-top: 60px;
+    width: 500px;
 }
 
 .egg {
@@ -86,17 +111,17 @@
 
 @keyframes bigbob {
     0% {
-        transform: translateY(10px) scale(1.05, 0.95);
+        transform: translateY(5px) scale(1.05, 0.95);
         ;
     }
 
     50% {
-        transform: translateY(-10px) scale(0.95, 1.05);
+        transform: translateY(-5px) scale(0.95, 1.05);
         ;
     }
 
     100% {
-        transform: translateY(10px) scale(1.05, 0.95);
+        transform: translateY(5px) scale(1.05, 0.95);
         ;
     }
 }
@@ -140,7 +165,7 @@
 }
 
 .box2 {
-    font-family: 'Lucida Handwriting', cursive;
+    font-family: 'Herculanum';
     border-width: 12px;
     border-style: groove;
     border-color: rgba(172, 255, 233, 0.2);
@@ -152,7 +177,7 @@
     margin-top: 100px;
 }
 
-.subsequent p {
+.subsequent p, .fatcat p {
     text-align: center;
 }
 
