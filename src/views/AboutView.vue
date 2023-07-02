@@ -28,7 +28,7 @@
         </div>
 
         <div class="fatcat">
-            <p>Now that you know what's up, head back to the top of the page to join our server and kickstart your prehistoric empire. Go!
+            <p>Now that you know what's up, head back to the top of this page to join our server and kickstart your prehistoric empire. Go!
             </p>
             <br><br>
             <br><br>
@@ -165,7 +165,8 @@
 }
 
 .box2 {
-    font-family: 'Herculanum';
+    font-style: italic;
+    font-family: sans-serif;
     border-width: 12px;
     border-style: groove;
     border-color: rgba(172, 255, 233, 0.2);
