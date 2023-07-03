@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <img class="egg" src="../assets/imgs/egg.png">
-        <h1>About Pangea</h1>
+        <h1 class="eggcream">About Pangea</h1>
     </div>
 
     <div class="body-container text-white">
@@ -40,21 +40,6 @@
             <br><br>
             <br><br>
             <p>Back to the top of the page!</p>
-            <br><br>
-            <br><br>
-            <br><br>
-            <br><br>
-            <p>No, the TOP of the page. Not the bottom!</p>
-            <br><br>
-            <br><br>
-            <br><br>
-            <br><br>
-            <p>What, can you not read?</p>
-            <br><br>
-            <br><br>
-            <br><br>
-            <br><br>
-            <p>Go back. There's nothing to see down here.</p>
         </div>
     </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <img class="globe" src="../assets/imgs/ServerIcon.png">
-        <h1>Welcome to Pangea</h1>
+        <h1 class="icecream">Welcome to Pangea</h1>
     </div>
 
     <div class="body-container text-white">
@@ -11,18 +11,61 @@
             </p>
             <img src="../assets/imgs/logo.png">
         </div>
-        <div class="body-divider">Inventory</div>
-        <CommandCard name="!bal" syntax="!bal [user]">Displays the balance of a user. The <soup>[user]</soup> parameter is optional and if none is specified, your own balance will be displayed.</CommandCard>
-        <CommandCard name="!substances" syntax="!substances">Displays your substances. Shop for more using <soup>!shop</soup>.</CommandCard>
-        <div class="body-divider">Dino Market</div>
-        <CommandCard name="!market" syntax="!market [page]">Displays a page of purchaseable dinosaurs. The first page is displayed by default, and other pages can accessed by page number.</CommandCard>
-        <CommandCard name="!preview" syntax="!preview [dino type]">Displays the stats of a dinosaur type using its numerical ID. See IDs in <soup>!market</soup> (e.g. 1 for female microraptor.)</CommandCard>
-        <CommandCard name="!purchase" syntax="!purchase [dino] [name]">Buys a dinosaur from <soup>!market</soup> with its ID (e.g. 1 for female microraptor) as well as a unique name of the user's choice. You will use this name to identify your dinosaur once it's bought, so you may not choose the same name for more than one dinosaur.</CommandCard>
-        <CommandCard name="!view" syntax="!view [dino]">Displays the stats of a dinosaur you own using the dinosaur's numerical ID. See dinosaur IDs in <soup>!dinos</soup>.</CommandCard>
-        <div class="body-divider">Substance Shop</div>
-        <CommandCard name="!shop" syntax="!shop">Lists substances that can be bought and fed to dinosaurs.</CommandCard>
-        <CommandCard name="!buy" syntax="!buy [substance] [amount]">Buys a substance from <soup>!shop</soup> with its name or numerical ID (e.g. 0 for coffee.)</CommandCard>
-        <CommandCard name="!dose" syntax="!dose [dino] [substance] [amount]">Feeds your dinosaur a substance. See dinosaur names and IDs in <soup>!dinos</soup>. See substance names and IDs in <soup>!substances</soup>.</CommandCard>
+        <div class="command-section">
+            <div class="body-divider">Inventory</div>
+            <CommandCard name="!bal" syntax="!bal [user]">Displays the balance of a user. The <soup>[user]</soup> parameter
+                is optional and if none is specified, your own balance will be displayed.</CommandCard>
+            <CommandCard name="!substances" syntax="!substances">Displays your substances. Shop for more using <soup>!shop
+                </soup>.</CommandCard>
+        </div>
+
+        <div class="command-section">
+            <div class="body-divider">Dino Market</div>
+            <CommandCard name="!market" syntax="!market [page]">Displays a page of purchaseable dinosaurs. The first page is
+                displayed by default, and other pages can accessed by page number.</CommandCard>
+            <CommandCard name="!preview" syntax="!preview [dino type]">Displays the stats of a dinosaur type using its
+                numerical
+                ID. See IDs in <soup>!market</soup> (e.g. 1 for female microraptor.)</CommandCard>
+            <CommandCard name="!purchase" syntax="!purchase [dino] [name]">Buys a dinosaur from <soup>!market</soup> with
+                its ID
+                (e.g. 1 for female microraptor) as well as a unique name of the user's choice. You will use this name to
+                identify your dinosaur once it's bought, so you may not choose the same name for more than one dinosaur.
+            </CommandCard>
+        </div>
+
+        <div class="command-section">
+            <div class="body-divider">Dino Management</div>
+            <CommandCard name="!view" syntax="!view [dino]">Displays the stats of a dinosaur you own using the dinosaur's
+                numerical ID. See dinosaur IDs in <soup>!dinos</soup>.</CommandCard>
+            <CommandCard name="!dinos" syntax="!dinos [user]">Lists the dinosaurs owned by a user. The <soup>[user]</soup>
+                parameter is optional and if none is specified, your own dinosaurs will be displayed.</CommandCard>
+            <CommandCard name="!eggs" syntax="!eggs [user]">Lists the eggs owned by a user. The <soup>[user]</soup>
+                parameter is
+                optional and if none is specified, your own eggs will be displayed.</CommandCard>
+            <CommandCard name="!picture" syntax="!picture">Toggle visibility of dinosaur's picture when viewing.
+            </CommandCard>
+            <CommandCard name="!dinocolors" syntax="!dinocolors [dino]">Lists your dinosaur's colors. Use <soup>[dino]
+                </soup> to
+                specify the name of the dinosaur.</CommandCard>
+            <CommandCard name="!breed" syntax="!breed [dino1] [dino2]">Breed two of your dinosaurs. Use <soup>[dino1]</soup>
+                and
+                <soup>[dino2]</soup> to specify the names of the dinosaur.
+            </CommandCard>
+            <CommandCard name="!changename" syntax="!changename [dino] [newname]">Rename a dinosaur. Use <soup>[dino]
+                </soup> to
+                specify the current name of the dinosaur and <soup>[newname]</soup> to specify the new name.</CommandCard>
+        </div>
+
+        <div class="command-section">
+            <div class="body-divider">Substance Shop</div>
+            <CommandCard name="!shop" syntax="!shop">Lists substances that can be bought and fed to dinosaurs.</CommandCard>
+            <CommandCard name="!buy" syntax="!buy [substance] [amount]">Buys a substance from <soup>!shop</soup> with its
+                name
+                or numerical ID (e.g. 0 for coffee.)</CommandCard>
+            <CommandCard name="!dose" syntax="!dose [dino] [substance] [amount]">Feeds your dinosaur a substance. See
+                dinosaur
+                names and IDs in <soup>!dinos</soup>. See substance names and IDs in <soup>!substances</soup>.</CommandCard>
+        </div>
     </div>
 </template>
 
