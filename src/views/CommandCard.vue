@@ -3,12 +3,12 @@
         <div class="head">
             <span class="arrow" v-if="collapsed">⇓</span>
             <span class="arrow" v-else>⇑</span>
-            <span class="name">{{ name }}</span>
+            <span class="name" :style="{ 'font-style': (sunscreen) ? 'italic' : '' }">{{ name }}</span>
             <span class="arrow" v-if="collapsed">⇓</span>
             <span class="arrow" v-else>⇑</span>
         </div>
         <div :style="(collapsed) ? 'max-height: 0px; padding-top: 0px; padding-bottom: 0px' : ''" class="body">
-            <p class="campbellssoup">{{ syntax }}</p>
+            <p v-if="syntax" class="campbellssoup">{{ syntax }}</p>
             <p class="pumpkinpie" :style="(align_left) ? 'text-align: left' : ''">
                 <slot></slot>
             </p>
@@ -116,7 +116,7 @@ soup {
 import { ref } from 'vue';
 
 export default {
-    props: ['name', 'syntax', 'align_left'],
+    props: ['name', 'syntax', 'align_left', 'sunscreen'],
 
     setup(props) {
         var collapsed = ref(true);
