@@ -105,6 +105,14 @@
     opacity: 90%;
 }
 
+.moose {
+    opacity: 75%;
+}
+
+.moose p {
+    font-size: 30px;
+}
+
 .body-intro img {
     width: 300px;
     margin-left: 10%;

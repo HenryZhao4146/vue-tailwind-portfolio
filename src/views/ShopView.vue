@@ -11,14 +11,10 @@
             <img class="bob" src="../assets/imgs/indoraptor-head.png">
         </div>
 
-        <div class="fatcat">
-            <br><br>
-            <br><br>
+        <div class="fatcat moose">
             <p><i>What's that you say? There's a huge dinosaur blocking the checkout counter? That's our, uh... pet, you see. The red liquid around its mouth? It's tomato sauce.</i></p>
         </div>
 
-        <br><br>
-        <br><br>
         <ShopItemCard name="Shop Item Name" price="$10">This page is not done!</ShopItemCard>
         <ShopItemCard name="Shop Item Name" price="$15">This page is very much not done</ShopItemCard>
         
