@@ -24,11 +24,11 @@
 
 <div class="command-section">
     <div class= "body-divider">Combat</div>
-    <CommandCard name="!attack" syntax="!attack [user]">Sends your army to attack the specified user. If they have a defence then your dinosaurs will clash until one party wins or until the fight is over. If you win the clash and defeat their defences your dinosaurs will start looting their farm and businesses.</CommandCard>
+    <CommandCard name="!attack" syntax="!attack [user]">Sends your army to attack the specified user. If they have a defense then your dinosaurs will clash until one party wins or until the fight is over. If you win the clash and defeat their defenses your dinosaurs will start looting their farm and businesses.</CommandCard>
 
             <CommandCard name="!army" syntax="!army [@user]">Shows your dinosaur army or the army of the person you mentioned. Armies are used to launch attacks with !attack</CommandCard>
 
-            <CommandCard name="!defense" syntax="!defense [@user]">Shows your dinosaur defenses or the defense of the person you mentioned. Defense is used to protect agains armies when users <soup>!attack</soup> you.</CommandCard>
+            <CommandCard name="!defense" syntax="!defense [@user]">Shows your dinosaur defenses or the defense of the person you mentioned. Defense is used to protect against armies when users <soup>!attack</soup> you.</CommandCard>
 
             <CommandCard name="!enlist" syntax="!enlist [dino dino dino...]">Enlists the selected dinosaurs into your army. (you can use the dinosaur id). <br><br> Use <soup>!army</soup> to view your army.</CommandCard>
 
