@@ -3,15 +3,15 @@
         <div class="head">
             <span class="arrow" v-if="collapsed">{{ down_arrow_value }}</span>
             <span class="arrow" v-else>{{ up_arrow_value }}</span>
-            <span class="name" :style="name_style">{{ name }} <span v-if="price" class="price">{{ price }}</span></span>
+            <div class="name" :style="name_style">{{ name }}<span v-if="price" class="price">{{ price }}</span></div>
             <span class="arrow" v-if="collapsed">{{ down_arrow_value }}</span>
             <span class="arrow" v-else>{{ up_arrow_value }}</span>
         </div>
         <div :style="(collapsed) ? 'max-height: 0px; padding-top: 0px; padding-bottom: 0px' : ''" class="body">
             <p v-if="syntax" class="command-syntax">{{ syntax }}</p>
-            <p class="card-desc" :style="desc_style">
+            <div class="card-desc" :style="desc_style">
                 <slot></slot>
-            </p>
+            </div>
         </div>
     </button>
 </template>

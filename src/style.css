@@ -13,8 +13,8 @@
 
 .price {
     border-width: 3px;
-    border-color: white;
-    padding: 8px;
+    border-color: #ffffff;
+    padding: 3px 8px 3px 8px;
     border-radius: 25px;
 }
 
@@ -63,6 +63,10 @@
 
 .icecream {
     animation: icecream 5s infinite linear;
+}
+
+.commandlisttext {
+    animation: commandlisttext 5s infinite linear;
 }
 
 .shoptext {
@@ -213,9 +217,15 @@ soup {
 .name {
     flex-shrink: 1;
     flex-grow: 1;
-    display: inline-block;
+    display: inline-flex;
     max-width: 100%;
     word-break: break-word;
+    align-items: center;
+    justify-content: center;
+}
+
+.name .price {
+    margin-left: 8px;
 }
 
 .body {
@@ -244,6 +254,15 @@ soup {
 }
 
 @media (max-width: 750px) {
+    .name {
+        flex-direction: column;
+    }
+
+    .name .price {
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+
     .head {
         font-size: 20px;
     }
@@ -269,6 +288,29 @@ soup {
 
     25% {
         color:rgb(193, 233, 255);
+    }
+
+    50% {
+        color:rgb(255, 255, 255);
+    }
+
+    75% {
+        color:rgb(206, 255, 204);
+    }
+
+    100% {
+        color:rgb(255, 255, 255);
+    }
+}
+
+@keyframes commandlisttext {
+
+    0% {
+        color:rgb(255, 255, 255);
+    }
+
+    25% {
+        color:rgb(202, 202, 202);
     }
 
     50% {
@@ -361,16 +403,15 @@ soup {
 @keyframes shopicon {
 
     0% {
-        transform: translateY(-10px);
+        filter: hue-rotate(0deg);
     }
 
     50% {
-        transform: translateY(10px) scale(0.95, 1.05);
-        filter: hue-rotate(180deg) drop-shadow(16px 16px 20px green);
+        transform: scale(0.95, 1.05);
+        filter: hue-rotate(180deg);
     }
 
     100% {
-        transform: translateY(-10px);
         filter: hue-rotate(360deg);
     }
 }
@@ -486,4 +527,40 @@ soup {
     .grilledcheese img {
         width: 250px;
     }
+}
+
+@keyframes diet {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+
+    50% {
+        transform: skew(3deg, 5deg);
+    }
+
+    100% {
+        transform: skew(0deg, 0deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.globe {
+    animation: rotation 10s infinite linear;
+}
+
+.diet {
+    animation: diet 2s infinite linear;
+}
+
+.popcorn {
+    color: rgb(235, 255, 241);
 }

@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <img class="shopicon" src="../assets/imgs/goose.png">
+        <img class="shopicon" src="../assets/imgs/microraptor-head.png">
         <h1 class="shoptext">Jurassic Shop</h1>
     </div>
 
@@ -19,7 +19,8 @@
 
         <br><br>
         <br><br>
-        <ShopItemCard name="Shop Item Name" price="$10">Shop item desc.</ShopItemCard>
+        <ShopItemCard name="Shop Item Name" price="$10">This page is not done!</ShopItemCard>
+        <ShopItemCard name="Shop Item Name" price="$15">This page is very much not done</ShopItemCard>
         
     </div>
 </template>

@@ -4,7 +4,7 @@
       <a href="/" class="navlink">Home</a>
       <a href="/about" class="navlink">About</a>
       <a href="/shop" class="navlink">Shop</a>
-      <a href="https://discord.gg/KdeCr7HGcq" target="_blank" class="rightmost navlink">Join Us</a>
+      <a href="/commands" class="rightmost navlink">Commands</a>
     </div>
   </nav>
 
