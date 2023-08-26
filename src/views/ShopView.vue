@@ -14,10 +14,17 @@
         <div class="fatcat">
             <br><br>
             <br><br>
-            <p><i>What's that you say? There's a huge dinosaur blocking the checkout counter? That's our, uh... pet, you see. The red liquid around its mouth is tomato sauce. It likes tomatoes. It's not the blood of a previous customer.</i></p>
+            <p><i>What's that you say? There's a huge dinosaur blocking the checkout counter? That's our, uh... pet, you see. The red liquid around its mouth is tomato sauce, not something else.</i></p>
         </div>
+
+        <br><br>
+        <br><br>
+        <ShopItemCard name="Shop Item Name" price="$10">Shop item desc.</ShopItemCard>
+        
     </div>
 </template>
 
-<style>
-</style>
+<script setup>
+import ShopItemCard from './ShopItemCard.vue';
+
+</script>

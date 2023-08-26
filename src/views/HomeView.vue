@@ -65,8 +65,8 @@
             <CommandCard name="!dose" syntax="!dose [dino] [substance] [amount]">Feeds your dinosaur a substance. See
                 dinosaur
                 names and IDs in <soup>!dinos</soup>. See substance names and IDs in <soup>!substances</soup>.</CommandCard>
-            <CommandCard :sunscreen="true" name="how substances work">When your dinosaur ingests a substance, the buffs will automatically apply to your dinosaurs stats. Check your dinosaurs buffs by using <soup>!buffs [dinosaur]</soup>.
-</CommandCard>
+            <CommandCard :name_style="{ 'font-style': 'italic' }" name="how substances work">When your dinosaur ingests a substance, the buffs will automatically apply to your dinosaurs stats. Check your dinosaurs buffs by using <soup>!buffs [dinosaur]</soup>.
+            </CommandCard>
         </div>
     </div>
 </template>

@@ -11,6 +11,13 @@
     }
 }
 
+.price {
+    border-width: 3px;
+    border-color: white;
+    padding: 8px;
+    border-radius: 25px;
+}
+
 .command-section:nth-child(even) {
     color: rgb(218, 248, 255);
 }
@@ -148,6 +155,100 @@
 
     .body-divider {
         font-size: 25px;
+    }
+}
+
+.command-syntax {
+    margin-bottom: 15px;
+    display: inline-block;
+    padding: 5px;
+    border-width: 5px;
+    border-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.command-syntax,
+soup {
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    color: rgb(231, 231, 231);
+    font-family: 'Lucida Console', monospace;
+}
+
+soup {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 4px;
+}
+
+.card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    opacity: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    transition: all 0.2s;
+    width: 100%;
+}
+
+.command:hover .name,
+.command:hover .arrow {
+    opacity: 0.85;
+}
+
+.command:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.head {
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: inline-block;
+    max-width: 100%;
+    word-break: break-word;
+}
+
+.body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+    overflow: hidden;
+    max-height: 1000px;
+
+    transition: padding 0.2s, max-height 0.5s;
+}
+
+.arrow {
+    flex-basis: 20%;
+}
+
+@media (max-width: 750px) {
+    .head {
+        font-size: 20px;
+    }
+
+    .body {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
+
+    .card-desc {
+        text-align: justify;
     }
 }
 
