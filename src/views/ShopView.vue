@@ -14,7 +14,7 @@
         <div class="fatcat">
             <br><br>
             <br><br>
-            <p><i>What's that you say? There's a huge dinosaur blocking the checkout counter? That's our, uh... pet, you see. The red liquid around its mouth is tomato sauce, not something else.</i></p>
+            <p><i>What's that you say? There's a huge dinosaur blocking the checkout counter? That's our, uh... pet, you see. The red liquid around its mouth? It's tomato sauce.</i></p>
         </div>
 
         <br><br>

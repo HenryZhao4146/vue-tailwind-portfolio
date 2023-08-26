@@ -230,6 +230,15 @@ soup {
     transition: padding 0.2s, max-height 0.5s;
 }
 
+.card img {
+    border: 5px solid #3E0808; /* Add a subtle border */
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .arrow {
     flex-basis: 20%;
 }
