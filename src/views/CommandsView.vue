@@ -6,6 +6,14 @@
 
     <div class="body-container text-white">
         <div class="command-section">
+            <div class="body-divider">Basic</div>
+            <CommandCard name="!bal" syntax="!bal [user]">Displays the balance of a user. The <soup>[user]</soup> parameter
+                is optional and if none is specified, your own balance will be displayed.</CommandCard>
+                <CommandCard name="!tutorial" syntax="!tutorial">This command either disables or enables tutorial mode, which is the help at the top of commands</CommandCard>
+                <CommandCard name="!picture" syntax="!picture">Enables or disables images being shown when using<soup>!view</soup> and other commands that show your dinosaur</CommandCard>
+                <CommandCard name="!perks" syntax="!perks [user]">Displays the purchased items that the user has, or that you have if no <soup>[user]</soup> is specified</CommandCard>
+        </div>
+        <div class="command-section">
             <div class="body-divider">Dino Market</div>
             <CommandCard name="!market" syntax="!market [page]">Displays a page of purchaseable dinosaurs. The first page is
                 displayed by default, and other pages can accessed by page number. The market updates every hour so if a dinosaur you wanted to purchase isn't there, if you wait it will refresh. Once you purchase a dinosaur from the market, nobody else can. You can see it be removed.</CommandCard>

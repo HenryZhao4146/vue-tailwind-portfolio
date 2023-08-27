@@ -3,8 +3,8 @@
     <div class="bar">
       <a href="/" class="navlink">Home</a>
       <a href="/about" class="navlink">About</a>
-      <a href="/shop" class="navlink">Shop</a>
-      <a href="/commands" class="rightmost navlink">Commands</a>
+      <a href="/commands" class="navlink">Commands</a>
+      <a href="/shop" class="rightmost navlink">Shop</a>
     </div>
   </nav>
 

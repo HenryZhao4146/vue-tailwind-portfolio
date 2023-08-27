@@ -1,5 +1,5 @@
 <template>
-    <BaseCard :name="name" :syntax="syntax" :desc_style="desc_style" :name_style="name_style">
+    <BaseCard class="command-card" :name="name" :syntax="syntax" :desc_style="desc_style" :name_style="name_style">
         <slot></slot>
     </BaseCard>
 </template>

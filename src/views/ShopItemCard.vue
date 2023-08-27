@@ -1,5 +1,5 @@
 <template>
-    <BaseCard :name="name" :desc_style="desc_style" :name_style="name_style" :price="price" up_arrow="☝︎" down_arrow="☟">
+    <BaseCard class="shop-card" :name="name" :desc_style="desc_style" :name_style="name_style" :price="price" up_arrow="☝︎" down_arrow="☟">
         <slot></slot>
     </BaseCard>
 </template>

@@ -17,6 +17,12 @@
 
         <ShopItemCard name="Shop Item Name" price="$10">This page is not done!</ShopItemCard>
         <ShopItemCard name="Shop Item Name" price="$15">This page is very much not done</ShopItemCard>
+        <ShopItemCard name="Shop Item Name" price="$15">This page is very much not done</ShopItemCard>
+        <ShopItemCard name="Shop Item Name" price="$15">This page is very much not done</ShopItemCard>
+        <ShopItemCard name="Shop Item Name" price="$15">This page is very much not done</ShopItemCard>
+        <ShopItemCard name="Shop Item Name" price="$15">This page is very much not done</ShopItemCard>
+        <ShopItemCard name="Shop Item Name" price="$15">This page is very much not done</ShopItemCard>
+        <ShopItemCard name="Shop Item Name" price="$15">This page is very much not done</ShopItemCard>
         
     </div>
 </template>
