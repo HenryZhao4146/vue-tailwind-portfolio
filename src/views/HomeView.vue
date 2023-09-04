@@ -6,8 +6,8 @@
 
     <div class="body-container text-white">
         <div class="body-intro">
-            <p class="popcorn">Think twice before proceeding into the land of dinosaurs. But if you insist on taming
-                the untameable, then let this be your guide.
+            <p class="popcorn">{{ `Think twice before proceeding into the land of dinosaurs${route.meta?.user?.username ? ', ' + route.meta.user.username : ''}. But if you insist on taming `
+                + 'the untameable, then let this be your guide.' }}
             </p>
             <img src="../assets/imgs/logo.png">
         </div>
@@ -16,6 +16,8 @@
 </template>
 
 <script setup>
-import CommandCard from './CommandCard.vue';
+import { ref } from 'vue';
+import { useRoute } from 'vue-router';
 
+const route = ref(useRoute())
 </script>

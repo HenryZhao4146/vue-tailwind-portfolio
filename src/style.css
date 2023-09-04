@@ -638,3 +638,15 @@ soup {
 .popcorn {
     color: rgb(235, 255, 241);
 }
+
+.user {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.bar button img {
+    margin-left: 12px;
+    width: 32px;
+    border-radius: 32px;
+}

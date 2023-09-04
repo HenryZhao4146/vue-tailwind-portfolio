@@ -1,10 +1,15 @@
 <template>
-  <nav class="text-white">
+  <nav v-if="route?.meta?.loaded" class="text-white">
     <div class="bar">
       <a href="/" class="navlink">Home</a>
-      <a href="/about" class="navlink">About</a>
       <a href="/commands" class="navlink">Commands</a>
-      <a href="/shop" class="rightmost navlink">Shop</a>
+      <a href="/shop" class="navlink">Shop</a>
+      <button v-if="route.meta.user" @click="logout" class="rightmost navlink">Logout<img
+          :src="`https://cdn.discordapp.com/avatars/${route.meta.user.id}/${route.meta.user.avatar}?size=64`"></button>
+      <a v-else
+        href="https://discord.com/api/oauth2/authorize?client_id=791131539140247588&redirect_uri=https%3A%2F%2Fwww.pangea.directory&response_type=code&scope=identify"
+        class="rightmost navlink">Login</a>
+      <!-- TODO: send state to oauth endpoint to make this more secure -->
     </div>
   </nav>
 
@@ -19,7 +24,7 @@
 }
 
 .navlink {
-  color:rgb(230, 252, 255);
+  color: rgb(230, 252, 255);
   font-size: 20px;
   text-align: center;
   display: block;
@@ -45,22 +50,21 @@
   margin-right: 8px;
 }
 
-.bar>div {
-  flex-grow: 1;
-}
-
 @media (max-width: 750px) {
-    .navlink {
-      font-size: 15px;
-    }
+  .navlink {
+    font-size: 15px;
+  }
 }
 </style>
 
 <script setup>
+import { ref } from 'vue';
+import { useRoute } from 'vue-router';
 
-console.log('Setting up!')
+const route = ref(useRoute())
 
+const logout = () => {
+  localStorage.removeItem('oauth-state')
+  window.location.reload()
+};
 </script>
-
-
-
