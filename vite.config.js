@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-import { spawn } from 'child_process';
+/*
 
+import { spawn } from 'child_process';
 
 console.log("Configuring server...");
 const child = spawn('node', ['./src/server.js'], {
@@ -27,6 +28,7 @@ process.on('SIGTERM', () => {
   child.kill();
   process.exit();
 });
+*/
 
 export default defineConfig({
   plugins: [vue()],

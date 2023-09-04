@@ -94,6 +94,8 @@ router.beforeEach(async (to, _, next) => {
                 to.meta.user = userResponseData;
 
                 const randomString = generateRandomString(); // TODO: use bearer token instead of this
+
+                /*
                 await fetch('https://www.pangea.directory:3000/oauth_state?token=' + randomString, {
                     method: 'POST',
                     mode: "cors",
@@ -102,6 +104,8 @@ router.beforeEach(async (to, _, next) => {
                     },
                     body: JSON.stringify(userResponseData),
                 })
+                */
+
                 localStorage.setItem('oauth-state', JSON.stringify({
                     ...userResponseData,
                     token: randomString
