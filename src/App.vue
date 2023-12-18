@@ -7,7 +7,7 @@
       <button v-if="route.meta.user" @click="logout" class="rightmost navlink">Logout<img
           :src="`https://cdn.discordapp.com/avatars/${route.meta.user.id}/${route.meta.user.avatar}?size=64`"></button>
       <a v-else
-        href="https://discord.com/api/oauth2/authorize?client_id=791131539140247588&redirect_uri=https%3A%2F%2Fwww.pangea.directory&response_type=code&scope=identify"
+        href="https://discord.com/api/oauth2/authorize?client_id=791131539140247588&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5173&scope=identify"
         class="rightmost navlink">Login</a>
       <!-- TODO: send state to oauth endpoint to make this more secure -->
     </div>
