@@ -3,7 +3,7 @@ import { loadScript } from '@paypal/paypal-js'
 import { onBeforeMount, ref } from 'vue'
 
 // Change to your CLIENT ID gotten from the developer dashboard
-const CLIENT_ID = 'AeZG3iquWBQZvfjTzCUgFAgtKUslD7mmYcYq_Mgli-nEC9iBYw1gpMu7yEyL-0DK5ukX_Zi2zOkoIvdJ'
+const CLIENT_ID = 'AUd0lXEyYK7xWrNRjtr7irFlVAY-RWUmMaEqV6c1q73vTyrzq8oRsap3p_VtlJB4JBLTw7w-PWTIcFuS'
 
 const { cartTotal } = defineProps({
   cartTotal: {
