@@ -24,10 +24,12 @@
         <ShopItemCard name="Shop Item Name" price="$15">This page is very much not done</ShopItemCard>
         <ShopItemCard name="Shop Item Name" price="$15">This page is very much not done</ShopItemCard>
         
+        <CheckoutPayment />
     </div>
 </template>
 
 <script setup>
 import ShopItemCard from './ShopItemCard.vue';
+import CheckoutPayment from './CheckoutPayment.vue'
 
 </script>
