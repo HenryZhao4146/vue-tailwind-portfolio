@@ -73,7 +73,7 @@ router.beforeEach(async (to, _, next) => {
                     client_secret: 'bqAww77BWB8O8hs1iq6QUQustdV6wR5B', // this is NOT secure, we'll want a .env file later
                     code,
                     grant_type: 'authorization_code',
-                    redirect_uri: 'https://www.pangea.directory',
+                    redirect_uri: 'http://localhost:5173',
                     scope: 'identify',
                 }),
                 headers: {
