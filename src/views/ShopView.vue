@@ -30,6 +30,7 @@
 
 <script setup>
 import ShopItemCard from './ShopItemCard.vue';
-import CheckoutPayment from './CheckoutPayment.vue'
+import CheckoutPayment from './CheckoutPayment.vue';
+
 
 </script>
